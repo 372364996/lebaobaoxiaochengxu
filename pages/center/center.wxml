@@ -1,5 +1,8 @@
 <view wx:for="{{Industry}}">
   <text>{{item.Name}}</text>
-    <text>{{item.Price}}</text>
+  <text>{{item.Price}}</text>
 </view>
-<view><text>{{xuexiao}}</text></view>
+<view>
+  <text>{{xuexiao}}</text>
+<text>抛出去</text>
+</view>
