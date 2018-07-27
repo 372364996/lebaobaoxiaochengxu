@@ -1,0 +1,9 @@
+/* pages/center.wxss */
+
+.center-title {
+  font-size: xx-large;
+}
+
+.center-view {
+  text-align: center;
+}
