@@ -17,8 +17,6 @@ Page({
     wx.request({
       url: 'https://lebaobao.azurewebsites.net/class/GetClassList',
       success: function(res) {
-        console.log(res.data.classList);
-
         that.setData({
           Industry: res.data.classList,
           xuexiao: res.data.classList[1].Description
