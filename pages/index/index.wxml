@@ -9,7 +9,7 @@
         <text class="userinfo-nickname">{{childName}}</text>
     </view>
       <view >
-       <text class="userinfo-nickname">手机号码：</text>
+       <text class="userinfo-nickname">2手机号码：</text>
         <text class="userinfo-nickname">{{phone}}</text>
     </view>
       <view >
