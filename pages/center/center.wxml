@@ -4,5 +4,4 @@
 </view>
 <view>
   <text>{{xuexiao}}</text>
-<text>抛出去</text>
 </view>
