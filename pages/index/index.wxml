@@ -1,4 +1,14 @@
 <!--index.wxml-->
+<!--基本用法-->
+
+<i-tab-bar current="{{ current }}" bindchange="handleChange" fixed="ture">
+    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+
+    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill"  title="个人中心"></i-tab-bar-item>
+</i-tab-bar>
+<!--自定义主题色-->
+
+
 <view class="container">
     <view bindtap="bindViewTap" class="userinfo">
         <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
