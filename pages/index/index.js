@@ -43,6 +43,7 @@ Page({
     wx.login({
       success: function(res_code) {
         wx.getUserInfo({
+          withCredentials: true,
           success: function(res) {
             that.setData({
               userInfo: res.userInfo
@@ -71,12 +72,15 @@ Page({
                 console.log(res_user.data.Id)
               }
             })
+          },
+          fail: function() {
+            //获取用户信息失败后。请跳转授权页面         
+            wx.navigateTo({
+              url: '../login/login',
+            })
           }
         })
       }
     })
-
-
-
   }
 })
