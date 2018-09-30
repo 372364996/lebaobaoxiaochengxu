@@ -8,7 +8,24 @@ Page({
     Industry: {},
     xuexiao:""
   },
+  handleChange({
+    detail
+  }) {
+    this.setData({
+      current: detail.key
+    });
+    if (detail.key == "homepage") {
+      wx.navigateTo({
+        url: '../index/index',
+      })
 
+    }
+    else if (detail.key == "mine") {
+      wx.navigateTo({
+        url: '../center/center',
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */

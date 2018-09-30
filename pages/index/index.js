@@ -17,6 +17,17 @@ Page({
     this.setData({
       current: detail.key
     });
+    if (detail.key=="homepage"){
+      wx.navigateTo({
+        url: '../index/index',
+      })
+      
+    }
+    else if (detail.key == "mine") {
+      wx.navigateTo({
+        url: '../center/center',
+      })
+    }
   },
   //事件处理函数
   bindViewTap: function() {

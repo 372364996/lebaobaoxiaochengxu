@@ -1,2 +1,8 @@
 <!--pages/login.wxml-->
-<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">微信登录</button>
+
+<view class="login-content">
+
+<image class="login-logo" src='../../images/logo.png'></image>
+
+<i-button bind:getuserinfo="bindGetUserInfo" open-type="getUserInfo" type="success" shape="circle">微信登录</i-button>
+</view>

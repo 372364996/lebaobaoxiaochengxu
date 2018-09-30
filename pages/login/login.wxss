@@ -1,0 +1,11 @@
+.login-content {
+  margin-top: 40%;
+}
+
+.login-logo {
+  margin: 0  auto 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  display: block;
+}
