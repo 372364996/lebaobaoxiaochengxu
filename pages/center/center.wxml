@@ -1,8 +1,4 @@
 
-<view wx:for="{{Industry}}">
-  <text>{{item.Name}}</text>
-  <text>{{item.Price}}</text>
-</view>
 <view>
-  <text>{{xuexiao}}</text>
+<image class='center-bannar' src='../../images/bannar.jpg'></image>
 </view>

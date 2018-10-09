@@ -7,3 +7,6 @@
 .center-view {
   text-align: center;
 }
+.center-bannar{
+  width: 100%;
+}
