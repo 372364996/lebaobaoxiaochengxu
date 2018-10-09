@@ -10,3 +10,9 @@
 .center-bannar{
   width: 100%;
 }
+.description{
+    text-align: center;
+    color: #495060;
+    background-color: #f8f8f9;
+    padding: 10px
+}

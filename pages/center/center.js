@@ -1,91 +1,96 @@
 // pages/center.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
-    Industry: {},
-    xuexiao:""
-  },
-  handleChange({
-    detail
-  }) {
-    this.setData({
-      current: detail.key
-    });
-    if (detail.key == "homepage") {
-      wx.navigateTo({
-        url: '../index/index',
-      })
-
-    }
-    else if (detail.key == "mine") {
-      wx.navigateTo({
-        url: '../center/center',
-      })
-    }
-  },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function(options) {
-    var that = this;
-    wx.request({
-      url: 'https://lebaobao.azurewebsites.net/class/GetClassList',
-      success: function(res) {
-        that.setData({
-          Industry: res.data.classList,
-          xuexiao: res.data.classList[1].Description
+    /**
+     * 页面的初始数据
+     */
+    data: {
+        Industry: {},
+        xuexiao: "",
+        markers: [{
+            id: 1,
+            latitude: 36.577757,
+            longitude: 114.491674,
+            name: '邯郸乐宝宝小儿推拿'
+        }]
+    },
+    handleChange({
+        detail
+    }) {
+        this.setData({
+            current: detail.key
         });
-      }
-    })
-  },
+        if (detail.key == "homepage") {
+            wx.navigateTo({
+                url: '../index/index',
+            })
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function() {
+        } else if (detail.key == "mine") {
+            wx.navigateTo({
+                url: '../center/center',
+            })
+        }
+    },
+    /**
+     * 生命周期函数--监听页面加载
+     */
+    onLoad: function(options) {
+        var that = this;
+        wx.request({
+            url: 'https://lebaobao.azurewebsites.net/class/GetClassList',
+            success: function(res) {
+                that.setData({
+                    Industry: res.data.classList,
+                    xuexiao: res.data.classList[1].Description
+                });
+            }
+        })
+    },
 
-  },
+    /**
+     * 生命周期函数--监听页面初次渲染完成
+     */
+    onReady: function() {
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function() {
+    },
 
-  },
+    /**
+     * 生命周期函数--监听页面显示
+     */
+    onShow: function() {
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function() {
+    },
 
-  },
+    /**
+     * 生命周期函数--监听页面隐藏
+     */
+    onHide: function() {
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function() {
+    },
 
-  },
+    /**
+     * 生命周期函数--监听页面卸载
+     */
+    onUnload: function() {
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function() {
+    },
 
-  },
+    /**
+     * 页面相关事件处理函数--监听用户下拉动作
+     */
+    onPullDownRefresh: function() {
 
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function() {
+    },
 
-  },
+    /**
+     * 页面上拉触底事件的处理函数
+     */
+    onReachBottom: function() {
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function() {}
+    },
+
+    /**
+     * 用户点击右上角分享
+     */
+    onShareAppMessage: function() {}
 })
