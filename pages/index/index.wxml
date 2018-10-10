@@ -1,16 +1,12 @@
-<!--index.wxml-->
-
-
-
-<view class="container">
-    <view bindtap="bindViewTap" class="userinfo">
-        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    </view>
-     <i-cell-group>
-     <i-cell title="昵称" value="{{userInfo.nickName}}"></i-cell>
-    <i-cell title="孩子姓名" value="{{childName}}"></i-cell>
-    <i-cell title="手机号码" value="{{phone}}"></i-cell>
-    <i-cell title="剩余次数" value="{{canusecount}}"></i-cell>
-</i-cell-group>
-  
+<view>
+    <image mode='aspectFit' class='center-bannar' src='../../images/bannar.jpg'></image>
+</view>
+<view class='description'>
+    <text>让更多的家长了解小儿推拿是一种绿色（无副作用）的疗法，让宝宝们不再滥用抗生素。让更多的宝宝通过小儿推拿来改善体质，提高孩子免疫力，做到预防疾病，生病时缩短病程。让更多的宝宝能通过小儿推拿得到受益。\n\n\n</text>
+    <text>乐宝宝小儿推拿，根据现代小儿脏腑娇嫩，形气未充，脏腑功能相对较弱，生病易阳易实的生理特点，以特殊的手法对特定的穴位进行推、拿、按、摩、掐、揉、达到治病保健的作用。\n\n\n</text>
+    <text>宝宝们身体的各个器官还处在发育时期，生病了过度的依靠药物带来的副作用会影响宝宝的身体健康发育（例如使用一次抗生素孩子8天不长）。小儿推拿是通过刺激宝宝不同的穴位来治疗不同的常见病症的，所以完全就不存在这个毒副作用的问题，它不仅仅效果显著，费用实惠，也不会让宝宝觉得很难受痛苦。小儿推拿可以治疗广泛的小儿疾病，比如小儿感冒，发烧，流鼻涕，咳嗽，腹泻，肚胀，食积，厌食，夜啼，发育迟缓，免疫力差等都可以使用小儿按摩来帮助调理。\n\n\n</text>
+    <text> 小儿推拿这种新型的治疗方式，可以从源头调理好宝宝的身体，提高宝宝自身的免疫力，小儿推拿，有奇效。\n\n\n</text>
+</view>
+<view class=''>
+    <map id="myMap" style="width: 100%; height: 300px;" longitude="114.491674" latitude="36.577757" scale='16' subkey="BJVBZ-OA5HI-OYAGW-536UN-L47FZ-IVBQU" markers="{{markers}}"></map>
 </view>

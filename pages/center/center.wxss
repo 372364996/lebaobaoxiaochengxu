@@ -1,18 +1,24 @@
-/* pages/center.wxss */
-
-.center-title {
-  font-size: xx-large;
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.center-view {
-  text-align: center;
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
 }
-.center-bannar{
-  width: 100%;
+.enter{
+
+    margin-top: 20px;
 }
-.description{
-    text-align: center;
-    color: #495060;
-    background-color: #f8f8f9;
-    padding: 10px
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
 }

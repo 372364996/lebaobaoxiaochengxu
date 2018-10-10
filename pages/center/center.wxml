@@ -1,9 +1,17 @@
-<view>
-    <image mode='aspectFit' class='center-bannar' src='../../images/bannar.jpg'></image>
-</view>
-<view class='description'>
-    <text>让更多的家长了解小儿推拿是一种绿色（无副作用）的疗法，让宝宝们不再滥用抗生素。让更多的宝宝通过小儿推拿来改善体质，提高孩子免疫力，做到预防疾病，生病时缩短病程。让更多的宝宝能通过小儿推拿得到受益。</text>
-</view>
-<view class=''>
-    <map id="myMap" style="width: 100%; height: 300px;" longitude="114.491674" latitude="36.577757" scale='16' subkey="BJVBZ-OA5HI-OYAGW-536UN-L47FZ-IVBQU" markers="{{markers}}"></map>
+<!--index.wxml-->
+
+
+
+<view class="container">
+    <view bindtap="bindViewTap" class="userinfo">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    </view>
+     <i-cell-group>
+     <i-cell title="昵称" value="{{userInfo.nickName}}"></i-cell>
+    <i-cell title="孩子姓名" value="{{childName}}"></i-cell>
+    <i-cell title="手机号码" value="{{phone}}"></i-cell>
+    <i-cell title="剩余次数" value="{{canusecount}}"></i-cell>
+    <i-cell title="到访记录"  is-link url="/pages/login/login"></i-cell>
+</i-cell-group>
+  
 </view>
