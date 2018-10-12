@@ -1,0 +1,99 @@
+page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/*滚动列表*/
+
+.order-lists {
+    flex: auto;
+    position: relative;
+    border: 1px solid #000;
+}
+
+.order-lists scroll-view {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.result-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 300rpx;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20rpx 0 20rpx 110rpx; */
+    overflow: hidden;
+    border-bottom: 2rpx solid #e5e5e5;
+    background-color: #fff;
+}
+
+.result-item .media {
+    position: absolute;
+    left: 16rpx;
+    top: 16rpx;
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 999rpx;
+}
+
+.result-item .title, .result-item .subtitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 36rpx;
+}
+
+.result-item .title {
+    margin-bottom: 4rpx;
+    color: #000;
+}
+
+.result-item .subtitle {
+    color: #808080;
+    font-size: 24rpx;
+}
+
+.result-item:first-child .subtitle text {
+    margin-right: 20rpx;
+}
+
+.result-item:not(:first-child) .subtitle text:not(:first-child):before {
+    content: '/';
+    margin: 0 8rpx;
+}
+
+.loading {
+    padding: 10rpx;
+    text-align: center;
+}
+
+.loading:before {
+    display: inline-block;
+    margin-right: 5rpx;
+    vertical-align: middle;
+    content: '';
+    width: 40rpx;
+    height: 40rpx;
+    background-color: #ddd;
+    animation: rotate 1s linear infinite;
+}
+
+.loading.complete:before {
+    display: none;
+}
+
+.back-top-button {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50rpx;
+    position: absolute;
+    right: 40rpx;
+    bottom: 200rpx;
+    background-color: rgba(0, 0, 0, 0.5)
+}

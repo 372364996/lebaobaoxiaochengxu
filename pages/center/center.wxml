@@ -11,7 +11,7 @@
     <i-cell title="孩子姓名" value="{{childName}}"></i-cell>
     <i-cell title="手机号码" value="{{phone}}"></i-cell>
     <i-cell title="剩余次数" value="{{canusecount}}"></i-cell>
-    <i-cell title="到访记录"  is-link url="/pages/login/login"></i-cell>
+    <!--<i-cell title="到访记录"  is-link url="/pages/record/record"></i-cell>-->
 </i-cell-group>
   
 </view>

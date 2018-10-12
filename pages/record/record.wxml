@@ -1,0 +1,9 @@
+<view class='order-lists'>
+    <view>
+        <view class="result-item" wx:for="{{requestOrderList}}" wx:key="unique" data-data="{{item}}">
+            <text class="title">{{item.name}}</text>
+        </view>
+        <view class="loading" hidden="{{!requestLoading}}">正在载入更多...</view>
+        <view class="loading complete" hidden="{{!requestLoadingComplete}}">已加载全部</view>
+    </view>
+</view>
